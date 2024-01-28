@@ -10,9 +10,14 @@ function MainContent(props) {
           />
         </div>
         <div>
-          <h3>Title: {props.name}</h3>
-          <p>Des: {props.des}</p>
-          <div className="flex flex-col gap-3 mt-3">
+          <h3>
+            <strong>Title: </strong>
+            {props.name}
+          </h3>
+          <p>
+            <strong>Des: </strong> {props.des}
+          </p>
+          <div className="flex flex-col gap-3 mt-3 ">
             <a href={props.live} target="_blank">
               {" "}
               <button className="bg-[#5f0f40] w-full hover:bg-[#761d54] text-white px-4 py-2 rounded font-semibold">
