@@ -4,7 +4,7 @@ function BlogContent(props) {
       <div className="flex max-w-[800px] flex-col gap-4 rounded-md  px-6 py-6 shadow-md shadow-gray-400">
         <div>
           <div className="flex items-center justify-between mb-2">
-            <h2 className="text-3xl font-bold font-main text-red-600">
+            <h2 className="text-xl md:text-3xl font-bold font-main text-red-600">
               {props.title}
             </h2>
             <h2 className="text-sm">

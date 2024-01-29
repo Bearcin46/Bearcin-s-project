@@ -25,7 +25,7 @@ function AppContent() {
           <img
             src={mainImage}
             alt="main"
-            className="md:w-[700x] md:h-[600px] w-[300px] h-[300px]"
+            className="md:w-[600px] md:h-[600px] w-[300px] h-[300px]"
           />
         </div>
       </div>
