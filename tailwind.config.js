@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         main: "DM Serif Display",
+        cursive: "Dancing Script",
       },
     },
   },

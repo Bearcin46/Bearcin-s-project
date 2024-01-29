@@ -1,10 +1,11 @@
+import Footer from "./Footer";
 import Title from "./Title";
 import MainContent from "./mainContent";
 function Javascript() {
   return (
     <>
       <Title title="JAVASCRIPT" />
-      <div className="grid grid-cols-3 gap-3 gap-y-6 mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 gap-y-6 mt-4">
         <MainContent
           name="School Website"
           des="Website created for a school."
@@ -62,6 +63,7 @@ function Javascript() {
           repo="https://github.com/Bearcin46/Cyberdude-Challenges/tree/main/JavaScript-DOM/08-IP-Register-app"
         />
       </div>
+      <Footer />
     </>
   );
 }

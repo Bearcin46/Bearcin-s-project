@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Title from "./Title";
 import MainContent from "./mainContent";
 const Reactpage = () => {
@@ -11,65 +12,7 @@ const Reactpage = () => {
           alt=""
         />
       </div>
-
-      {/* <div className="grid grid-cols-3 gap-2 mt-4">
-        <MainContent
-          name="restaurant"
-          des="its for hotel"
-          image=""
-          live=""
-          repo=""
-        />
-        <MainContent
-          name="restaurant"
-          des="its for hotel"
-          image=""
-          live=""
-          repo=""
-        />
-        <MainContent
-          name="restaurant"
-          des="its for hotel"
-          image=""
-          live=""
-          repo=""
-        />
-        <MainContent
-          name="restaurant"
-          des="its for hotel"
-          image=""
-          live=""
-          repo=""
-        />
-        <MainContent
-          name="restaurant"
-          des="its for hotel"
-          image=""
-          live=""
-          repo=""
-        />
-        <MainContent
-          name="restaurant"
-          des="its for hotel"
-          image=""
-          live=""
-          repo=""
-        />
-        <MainContent
-          name="restaurant"
-          des="its for hotel"
-          image=""
-          live=""
-          repo=""
-        />
-        <MainContent
-          name="restaurant"
-          des="its for hotel"
-          image=""
-          live=""
-          repo=""
-        />
-      </div> */}
+      <Footer />
     </>
   );
 };

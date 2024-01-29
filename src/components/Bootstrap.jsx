@@ -1,10 +1,11 @@
+import Footer from "./Footer";
 import Title from "./Title";
 import MainContent from "./mainContent";
 function Bootstrap() {
   return (
-    <>
+    <div className="">
       <Title title="BOOTSTRAP" />
-      <div className="grid grid-cols-3 gap-2 mt-4">
+      <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-2 mt-4">
         <MainContent
           name="Personal Website"
           des="Its a personal website built using bootstrap"
@@ -21,13 +22,21 @@ function Bootstrap() {
         />
         <MainContent
           name="Books Store"
-          des="Its a website designed for a book store"
+          des="Its a website designed for a book store for all age"
+          image="https://images.adsttc.com/media/images/573c/90c0/e58e/ce1e/1600/0007/large_jpg/Here_is_a_theater_to_unfold_an_outstanding_drama__and_the_characters_are_book_lovers_sitting_on_the_soft_couch_or_standing_beside_the_bookshelves._0004.jpg?1463587001"
+          live="https://bearcin46.github.io/bootstrap-books-website/"
+          repo="https://github.com/Bearcin46/bootstrap-books-website"
+        />
+        <MainContent
+          name="Books Store"
+          des="Its a website designed for a book store for all age"
           image="https://images.adsttc.com/media/images/573c/90c0/e58e/ce1e/1600/0007/large_jpg/Here_is_a_theater_to_unfold_an_outstanding_drama__and_the_characters_are_book_lovers_sitting_on_the_soft_couch_or_standing_beside_the_bookshelves._0004.jpg?1463587001"
           live="https://bearcin46.github.io/bootstrap-books-website/"
           repo="https://github.com/Bearcin46/bootstrap-books-website"
         />
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }
 export default Bootstrap;

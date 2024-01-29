@@ -1,10 +1,11 @@
+import Footer from "./Footer";
 import Title from "./Title";
 import MainContent from "./mainContent";
 function Tailwind() {
   return (
     <>
       <Title title="TAILWIND CSS" />
-      <div className="grid grid-cols-3 gap-2 mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-4">
         <MainContent
           name="WhatsApp"
           des="It's a UI representation of Whatsapp app"
@@ -34,6 +35,7 @@ function Tailwind() {
           repo="https://github.com/Bearcin46/houserent-using-tailwindcss"
         />
       </div>
+      <Footer />
     </>
   );
 }

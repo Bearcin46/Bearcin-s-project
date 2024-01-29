@@ -3,12 +3,12 @@ import mainImage from "./images/main.jpg";
 function AppContent() {
   return (
     <>
-      <div className="flex  justify-between">
+      <div className="flex md:flex md:flex-row flex-col gap-4 justify-between">
         <div className="flex flex-col items-start justify-center flex-1 ml-8">
-          <h1 className="text-8xl font-semibold text-[#5f0f40]">
-            Welcome here <span className="text-7xl">&#129309;</span>
+          <h1 className="text-5xl md:text-8xl font-cursive font-bold mt-2 text-[#5f0f40]">
+            Welcome here <span className="text-4xl md:text-7xl">&#129309;</span>
           </h1>
-          <p className="text-3xl  font-serif  mt-4">
+          <p className="text-xl md:text-3xl  font-serif  mt-4">
             Based out of Nagercoil,India. Specialized in Full-Stack Development.
             Ready to build your next product or join your team remotely.
           </p>
@@ -21,8 +21,12 @@ function AppContent() {
             </button>
           </div>
         </div>
-        <div className="">
-          <img src={mainImage} alt="main" className="w-[700x] h-[600px]" />
+        <div className="flex items-center justify-center">
+          <img
+            src={mainImage}
+            alt="main"
+            className="md:w-[700x] md:h-[600px] w-[300px] h-[300px]"
+          />
         </div>
       </div>
     </>

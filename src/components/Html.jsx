@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Title from "./Title";
 import MainContent from "./mainContent";
 
@@ -5,7 +6,7 @@ function Html() {
   return (
     <>
       <Title title="HTML & CSS" />
-      <div className="grid grid-cols-3 gap-2 mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-4">
         <MainContent
           name="Tacco Shop Website"
           des="Its designed to display about tacco shop"
@@ -35,6 +36,7 @@ function Html() {
           repo="https://github.com/Bearcin46/Landing-page-design"
         />
       </div>
+      <Footer />
     </>
   );
 }

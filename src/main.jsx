@@ -10,6 +10,7 @@ import Javascript from "./components/Javascript.jsx";
 import GuestLayout from "./components/GuestLayout.jsx";
 import Homepage from "./components/Homepage.jsx";
 import Reactpage from "./components/React.jsx";
+import Blog from "./components/Blog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/rjs",
         element: <Reactpage />,
+      },
+      {
+        path: "/blogs",
+        element: <Blog />,
       },
     ],
   },
