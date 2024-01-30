@@ -6,14 +6,12 @@ function Navbar() {
   const handleHamburgerMenu = () => {
     setMenuOpen(!menuOpen);
   };
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
+
   return (
     <>
-      <div className="flex flex-col gap-4 md:gap-0 md:flex md:flex-row items-center justify-between px-6 md:px-8 py-3 bg-[#5f0f40] relative">
-        <div className="flex items-center justify-between w-full">
-          <h1 className="text-2xl  md:text-4xl text-white font-cursive">
+      <div className="flex flex-col gap-4 md:gap-0 md:flex md:flex-row items-center justify-between px-6 py-5 md:px-8 md:py-3 bg-[#5f0f40] relative">
+        <div className="flex  items-center justify-between w-full">
+          <h1 className="text-3xl  md:text-4xl text-white font-cursive text-nowrap">
             <Link to={"/"}>Bearcin's Project</Link>
           </h1>
           {/* hamburger menu */}
@@ -24,8 +22,8 @@ function Navbar() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="2em"
-              height="2em"
+              width="2.25em"
+              height="2.25em"
               viewBox="0 0 24 24"
             >
               <path
@@ -36,7 +34,12 @@ function Navbar() {
           </div>
         </div>
         {/* menu items */}
-        <div className="flex flex-col md:flex-row md:flex w-full justify-between *:text-white *:font-semibold">
+        <div
+          menuOpen={!menuOpen}
+          className={`${
+            menuOpen ? "flex flex-col" : "hidden"
+          } md:flex-row md:flex w-full justify-between *:text-white *:font-semibold`}
+        >
           <div className="cursor-pointer hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] w-full text-center md:w-fit md:hover:text-gray-400">
             <Link to={"/html"}>HTML & CSS</Link>
           </div>

@@ -4,7 +4,7 @@ function AppContent() {
   return (
     <>
       <div className="flex md:flex md:flex-row flex-col gap-4 justify-between">
-        <div className="flex flex-col items-start justify-center flex-1 ml-8">
+        <div className="flex flex-col items-start justify-center flex-1 ml-3 mt-10 md:ml-8">
           <h1 className="text-5xl md:text-8xl font-cursive font-bold mt-2 text-[#5f0f40]">
             Welcome here <span className="text-4xl md:text-7xl">&#129309;</span>
           </h1>
