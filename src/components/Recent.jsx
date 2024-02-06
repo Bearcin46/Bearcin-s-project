@@ -15,7 +15,14 @@ function Recent(props) {
           <span>{props.date}</span>
         </div>
         <div>
-          <button className="bg-white text-[#5f0f40] font-semibold hover:bg-gray-100 rounded-md px-3 py-1">
+          <button
+            onClick={() => {
+              alert(
+                "This Page is under construction. Thanks for your understanding 😇"
+              );
+            }}
+            className="bg-white text-[#5f0f40] font-semibold hover:bg-gray-100 rounded-md px-3 py-1"
+          >
             Read..
           </button>
         </div>

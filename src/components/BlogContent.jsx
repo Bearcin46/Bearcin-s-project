@@ -30,7 +30,14 @@ function BlogContent(props) {
             {props.shortNotes}
           </h2>
           <div className="mt-2">
-            <button className="bg-[#5f0f40] w-full hover:bg-[#761d54] text-white px-4 py-2 rounded font-semibold">
+            <button
+              onClick={() => {
+                alert(
+                  "This Page is under construction. Thanks for your understanding 😇"
+                );
+              }}
+              className="bg-[#5f0f40] w-full hover:bg-[#761d54] text-white px-4 py-2 rounded font-semibold"
+            >
               Read More
             </button>
           </div>
