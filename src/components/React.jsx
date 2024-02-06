@@ -24,8 +24,8 @@ const Reactpage = () => {
           name="Whatsapp Chat Application"
           des="Web app for chats using states of React"
           image="https://web-assets.esetstatic.com/wls/2023/03/whatsapp-scams-avoid.jpg"
-          live="https://bearcin-sweety-resume.netlify.app/"
-          repo="https://github.com/Bearcin46/Cyberdude-Challenges/tree/main/Reactjs/Bearcin-Sweety"
+          live="https://whatsapp-web-application.netlify.app/"
+          repo="https://github.com/Bearcin46/Cyberdude-Challenges/tree/main/Reactjs/Fake-chat-app"
         />
         <MainContent
           name="Loading..."
