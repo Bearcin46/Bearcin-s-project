@@ -28,6 +28,20 @@ const Reactpage = () => {
           repo="https://github.com/Bearcin46/Cyberdude-Challenges/tree/main/Reactjs/Fake-chat-app"
         />
         <MainContent
+          name="React Hook Form Validation"
+          des="Contact form validation using hooks and Zod"
+          image="https://s38924.pcdn.co/wp-content/uploads/2022/08/ftl-contact-form.jpg"
+          live="https://react-hook-form-validation-zod.netlify.app/"
+          repo="https://github.com/Bearcin46/Cyberdude-Challenges/tree/main/Reactjs/Form-validation"
+        />
+        <MainContent
+          name="React add to cart"
+          des="Its a food cart made with typescript"
+          image="https://www.kitchentreasures.in/wp-content/uploads/2020/06/Thumb-2-01-scaled.webp"
+          live="https://github.com/Bearcin46/Restaurant-cart/"
+          repo="https://github.com/Bearcin46/Cyberdude-Challenges/tree/main/Reactjs/Form-validation"
+        />
+        <MainContent
           name="Loading..."
           des="Work on Progress, will update soon.."
           image="https://www.icegif.com/wp-content/uploads/2023/07/icegif-1260.gif"
