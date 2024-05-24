@@ -1,6 +1,7 @@
 import Footer from "./Footer";
 import Title from "./Title";
 import MainContent from "./mainContent";
+
 function Javascript() {
   return (
     <>

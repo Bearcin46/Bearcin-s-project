@@ -46,7 +46,7 @@ function Navbar() {
               `cursor-pointer w-full text-center md:w-fit ${
                 isActive
                   ? "text-black md:text-gray-100 md:border-r-2 md:border-l-2 md:border-white px-3 py-1 rounded-full md:bg-[#68214c] bg-white"
-                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-400"
+                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-200"
               }`
             }
           >
@@ -58,7 +58,7 @@ function Navbar() {
               `cursor-pointer w-full text-center md:w-fit ${
                 isActive
                   ? "text-black md:text-gray-100 md:border-r-2 md:border-l-2 md:border-white px-3 py-1 rounded-full md:bg-[#68214c] bg-white"
-                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-400"
+                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-200"
               }`
             }
           >
@@ -70,7 +70,7 @@ function Navbar() {
               `cursor-pointer w-full text-center md:w-fit ${
                 isActive
                   ? "text-black md:text-gray-100 md:border-r-2 md:border-l-2 md:border-white px-3 py-1 rounded-full md:bg-[#68214c] bg-white"
-                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-400"
+                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-200"
               }`
             }
           >
@@ -83,7 +83,7 @@ function Navbar() {
               `cursor-pointer w-full text-center md:w-fit ${
                 isActive
                   ? "text-black md:text-gray-100 md:border-r-2 md:border-l-2 md:border-white px-3 py-1 rounded-full md:bg-[#68214c] bg-white"
-                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-400"
+                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-200"
               }`
             }
           >
@@ -96,11 +96,11 @@ function Navbar() {
               `cursor-pointer w-full text-center md:w-fit ${
                 isActive
                   ? "text-black md:text-gray-100 md:border-r-2 md:border-l-2 md:border-white px-3 py-1 rounded-full md:bg-[#68214c] bg-white"
-                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-400"
+                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-200"
               }`
             }
           >
-            REACT
+            REACT JS
           </NavLink>
 
           <NavLink
@@ -109,7 +109,7 @@ function Navbar() {
               `cursor-pointer w-full text-center md:w-fit ${
                 isActive
                   ? "text-black md:text-gray-100 md:border-r-2 md:border-l-2 md:border-white px-3 py-1 rounded-full md:bg-[#68214c] bg-white"
-                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-400"
+                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-200"
               }`
             }
           >

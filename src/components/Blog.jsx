@@ -5,7 +5,7 @@ import Title from "./Title";
 function Blog() {
   return (
     <>
-      <Title title="Bearcin's Blog" />
+      <Title title="Bearcin's Blog" animation="fade-down" />
       <div className="px-6 ">
         <h1 className="mt-4 font-serif text-xl text-justify">
           Hi there! I'm thrilled to have you here at{" "}
