@@ -6,8 +6,10 @@ function AppContent() {
       <div className="flex md:flex md:flex-row flex-col gap-4 justify-between">
         <div className="flex flex-col items-start justify-center flex-1 ml-3 mt-10 md:ml-8">
           <h1 className="text-5xl md:text-8xl font-cursive font-bold mt-2 text-[#5f0f40]">
-            Welcome here <span className="text-4xl md:text-7xl">&#129309;</span>
+            Welcome here{" "}
           </h1>
+          <div className="animate-bounce text-4xl md:text-7xl">&#129309;</div>
+
           <p className="text-xl md:text-3xl  font-serif  mt-4">
             Specialized in Full-Stack Development. Ready to build your next
             product or join your team. Explore my journey of Full Stack

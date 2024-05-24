@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../index.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleHamburgerMenu = () => {
@@ -12,7 +12,7 @@ function Navbar() {
       <div className="flex flex-col gap-4 md:gap-0 md:flex md:flex-row items-center justify-between px-6 py-5 md:px-8 md:py-3 bg-[#5f0f40] relative">
         <div className="flex  items-center justify-between w-full">
           <h1 className="text-3xl  md:text-4xl text-white font-cursive text-nowrap">
-            <Link to={"/"}>Bearcin's Project</Link>
+            <NavLink to={"/"}>Bearcin's Project</NavLink>
           </h1>
           {/* hamburger menu */}
           <div
@@ -37,27 +37,84 @@ function Navbar() {
         <div
           menuOpen={!menuOpen}
           className={`${
-            menuOpen ? "flex flex-col" : "hidden"
-          } md:flex-row md:flex w-full justify-between *:text-white *:font-semibold`}
+            menuOpen ? "flex flex-col gap-2" : "hidden"
+          } md:flex-row md:flex w-full justify-between md:items-center text-white *:font-semibold`}
         >
-          <div className="cursor-pointer hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] w-full text-center md:w-fit md:hover:text-gray-400">
-            <Link to={"/html"}>HTML & CSS</Link>
-          </div>
-          <div className="cursor-pointer hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] w-full text-center md:w-fit md:hover:text-gray-400">
-            <Link to={"/bootstrap"}>BOOTSTRAP</Link>
-          </div>
-          <div className="cursor-pointer hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] w-full text-center md:w-fit md:hover:text-gray-400">
-            <Link to={"/tailwind"}>TAILWINDCSS</Link>
-          </div>
-          <div className="cursor-pointer hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] w-full text-center md:w-fit md:hover:text-gray-400">
-            <Link to={"/js"}>JAVASCRIPT</Link>
-          </div>
-          <div className="cursor-pointer hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] w-full text-center md:w-fit md:hover:text-gray-400">
-            <Link to={"/rjs"}>REACT</Link>
-          </div>
-          <div className="cursor-pointer hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] w-full text-center md:w-fit md:hover:text-gray-400">
-            <Link to={"/blogs"}>BLOGS</Link>
-          </div>
+          <NavLink
+            to="/html"
+            className={({ isActive }) =>
+              `cursor-pointer w-full text-center md:w-fit ${
+                isActive
+                  ? "text-black md:text-gray-100 md:border-r-2 md:border-l-2 md:border-white px-3 py-1 rounded-full md:bg-[#68214c] bg-white"
+                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-400"
+              }`
+            }
+          >
+            HTML & CSS
+          </NavLink>
+          <NavLink
+            to="/bootstrap"
+            className={({ isActive }) =>
+              `cursor-pointer w-full text-center md:w-fit ${
+                isActive
+                  ? "text-black md:text-gray-100 md:border-r-2 md:border-l-2 md:border-white px-3 py-1 rounded-full md:bg-[#68214c] bg-white"
+                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-400"
+              }`
+            }
+          >
+            BOOTSTRAP
+          </NavLink>
+          <NavLink
+            to="/tailwind"
+            className={({ isActive }) =>
+              `cursor-pointer w-full text-center md:w-fit ${
+                isActive
+                  ? "text-black md:text-gray-100 md:border-r-2 md:border-l-2 md:border-white px-3 py-1 rounded-full md:bg-[#68214c] bg-white"
+                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-400"
+              }`
+            }
+          >
+            TAILWINDCSS
+          </NavLink>
+
+          <NavLink
+            to="/js"
+            className={({ isActive }) =>
+              `cursor-pointer w-full text-center md:w-fit ${
+                isActive
+                  ? "text-black md:text-gray-100 md:border-r-2 md:border-l-2 md:border-white px-3 py-1 rounded-full md:bg-[#68214c] bg-white"
+                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-400"
+              }`
+            }
+          >
+            JAVASCRIPT
+          </NavLink>
+
+          <NavLink
+            to="/rjs"
+            className={({ isActive }) =>
+              `cursor-pointer w-full text-center md:w-fit ${
+                isActive
+                  ? "text-black md:text-gray-100 md:border-r-2 md:border-l-2 md:border-white px-3 py-1 rounded-full md:bg-[#68214c] bg-white"
+                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-400"
+              }`
+            }
+          >
+            REACT
+          </NavLink>
+
+          <NavLink
+            to="/blogs"
+            className={({ isActive }) =>
+              `cursor-pointer w-full text-center md:w-fit ${
+                isActive
+                  ? "text-black md:text-gray-100 md:border-r-2 md:border-l-2 md:border-white px-3 py-1 rounded-full md:bg-[#68214c] bg-white"
+                  : "hover:bg-white hover:text-[#5f0f40] md:hover:bg-[#5f0f40] md:hover:text-gray-400"
+              }`
+            }
+          >
+            BLOGS
+          </NavLink>
         </div>
       </div>
     </>
