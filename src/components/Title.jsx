@@ -1,7 +1,7 @@
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
-function Title({ title, animation = "slide-right" }) {
+function Title({ title, animation = "" }) {
   useEffect(() => {
     AOS.init({
       duration: 2000,

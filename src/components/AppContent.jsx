@@ -1,5 +1,6 @@
 import "../index.css";
 import mainImage from "./images/main.jpg";
+import { TypeAnimation } from "react-type-animation";
 function AppContent() {
   return (
     <>
@@ -8,9 +9,27 @@ function AppContent() {
           <div className="flex gap-2 items-end">
             <div className="animate-bounce text-4xl md:text-7xl">&#129309;</div>
 
-            <h1 className="text-5xl md:text-8xl font-cursive font-bold mt-2 text-[#5f0f40] ">
+            {/* <h1 className="text-5xl md:text-8xl font-cursive font-bold mt-2 text-[#5f0f40] ">
               Welcome here{" "}
-            </h1>
+            </h1> */}
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                "Welcome Here,",
+                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                "I'm Bearcin Sweety",
+                1000,
+                "React Developer",
+                1000,
+                "Full Stack Developer",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              className="text-5xl md:text-8xl font-cursive font-bold mt-2 text-[#5f0f40] "
+              // style={{ fontSize: "1em", display: "inline-block" }}
+              repeat={Infinity}
+            />
           </div>
           <p className="text-xl md:text-3xl  font-serif  mt-4">
             Specialized in Full-Stack Development. Ready to build your next
@@ -25,7 +44,7 @@ function AppContent() {
             </a>
             <a href="tel:+60-166050498">
               <button className="text-[#5f0f40] bg-white outline-2 hover:bg-slate-50 outline-double outline-[#5fof40] px-4 py-2 rounded font-semibold">
-                Hire Me
+                Contact Me
               </button>
             </a>
           </div>

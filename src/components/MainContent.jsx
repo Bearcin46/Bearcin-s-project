@@ -22,7 +22,7 @@ function MainContent(props) {
             className="w-[300px] h-[200px] object-cover"
           />
         </div>
-        <div data-aos="fade-down">
+        <div data-aos="">
           <h3>
             <strong>Title: </strong>
             {props.name}
