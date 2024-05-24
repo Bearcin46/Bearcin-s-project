@@ -1,11 +1,21 @@
 import "../index.css";
+import useAnimation from "../utils/useAnimation";
 import mainImage from "./images/main.jpg";
 import { TypeAnimation } from "react-type-animation";
+
 function AppContent() {
+  function animation(effect) {
+    const animationEffect = useAnimation(effect);
+    return animationEffect;
+  }
+
   return (
     <>
       <div className="flex md:flex md:flex-row flex-col gap-4 justify-between">
-        <div className="flex flex-col items-start justify-center flex-1 ml-3 mt-10 md:ml-8">
+        <div
+          className="flex flex-col items-start justify-center flex-1 ml-3 mt-10 md:ml-8"
+          {...animation("fade-left")}
+        >
           <div className="flex gap-2 items-end">
             <div className="animate-bounce text-4xl md:text-7xl">&#129309;</div>
 
@@ -16,7 +26,7 @@ function AppContent() {
               sequence={[
                 // Same substring at the start will only be typed out once, initially
                 "Welcome Here,",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                2000, // wait 1s before replacing "Mice" with "Hamsters"
                 "I'm Bearcin Sweety",
                 1000,
                 "React Developer",
@@ -54,6 +64,7 @@ function AppContent() {
             src={mainImage}
             alt="main"
             className="md:w-[600px] md:h-[600px] w-[300px] h-[300px] "
+            {...animation("fade-right")}
           />
         </div>
       </div>
